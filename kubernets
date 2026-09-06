@@ -1,0 +1,27 @@
+# List of product prices in dollars
+
+product_prices = [100, 150, 200, 250, 300]
+
+# Discount percentage
+
+discount_percentage = 10
+
+# Function to apply discount
+
+def apply_discount(price, discount):
+
+    return price - (price * discount / 100)
+
+# List to store discounted prices
+
+discounted_prices = []
+
+# Iterating through the list and applying the discount
+
+for price in product_prices:
+
+    discounted_prices.append(apply_discount(price, discount_percentage))
+
+# Printing the discounted prices
+
+print("Discounted Prices:", discounted_prices)
